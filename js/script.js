@@ -26,7 +26,7 @@ async function restCountires() {
 
     // another div have class row col-lg-4 col-sm-12 in  class row in div tag
     const classDiv = document.createElement("div");
-    classDiv.className = "col-sm-6.col-md-4.col-lg-4.col-xl-4'";
+    classDiv.className = " col-sm-6.col-md-4.col-lg-4.col-xl-4";
     subDiv.appendChild(classDiv);
 
 
