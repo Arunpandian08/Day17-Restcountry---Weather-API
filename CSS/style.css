@@ -1,0 +1,108 @@
+.col {
+    row-gap: 20px;
+
+}
+
+.container .card {
+    display: inline-block;
+
+}
+
+#title {
+    justify-content: center;
+    background-color:whitesmoke;
+    box-shadow: 0px 0px 5px white,
+        0px 0px 30px white,
+        0px 0px 90px white;
+    color: rgb(16, 17, 17);
+    text-shadow: 0px 0px 20px rgb(14, 14, 14);
+    font-family: Silkscreen;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.card {
+    text-align: center;
+    justify-content: center;
+    border-color: rgb(143, 136, 136);
+    background: linear-gradient(180deg, #c73694 30%, #f3eded , #20768a );
+    margin: 10px;
+    padding: 10px;
+}
+
+.card-header {
+    background: black;
+    color: rgb(240, 237, 238);
+    text-shadow: 0px 0px 20px rgb(240, 237, 238);
+    font-family: Rubik Maps;
+    font-weight: 500;
+    font-size: 2em;
+}
+
+img {
+    height: fit-content;
+    width: 200px;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 0px;
+    padding: 20px;
+    padding-bottom: 30px;
+    transition: transform 0.3s ease;
+    justify-content: center;
+}
+
+.flag-image:hover {
+    transform: scale(1.4);
+}
+
+body {
+
+    background: url(https://static.vecteezy.com/system/resources/previews/005/907/802/non_2x/light-silver-gray-blurry-triangle-pattern-vector.jpg)repeat center center;
+    animation: blinkBackground 1s infinite alternate;
+    background-attachment: fixed;
+    margin: 10px 10px 10px 10px;
+}
+
+@keyframes blinkBackground {
+    0% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.card-text {
+    border: 1px solid black;
+    border-radius: 10px;
+    background: linear-gradient(80deg, #382d2d, white, #382d2d);
+    color: black ;
+    font-family: Acme;
+    font-size: 1.2rem;
+
+}
+.card-text:hover{
+    color:#0d0d0d;
+    border-color: whitesmoke;
+    background: linear-gradient(80deg, white, white, white);
+    box-shadow: 0px 0px 5px white,
+        0px 0px 30px white,
+        0px 0px 90px white;
+}
+
+.btn {
+    background: #1153df;
+    color:black;
+    cursor: pointer;
+    border: 1px solid black;
+    font-family: Acme;
+    font-size: 1.2rem;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 5px #1153df,
+        0px 0px 30px #1153df,
+        0px 0px 90px #1153df;
+}
