@@ -1,6 +1,5 @@
-.col {
+.row {
     row-gap: 20px;
-
 }
 
 .container .card {
@@ -51,8 +50,8 @@ img {
     justify-content: center;
 }
 
-.flag-image:hover {
-    transform: scale(1.4);
+.card-img-top:hover {
+    transform: scale(1.1);
 }
 
 body {
@@ -75,7 +74,7 @@ body {
 
 
 .card-text {
-    border: 1px solid black;
+    border: 1px solid;
     border-radius: 10px;
     background: linear-gradient(80deg, #382d2d, white, #382d2d);
     color: black ;

@@ -3,7 +3,7 @@
 async function restCountires() {
   try {
     // using fetch for getting data's in API
-    const response = await fetch("https://restcountries.com/v3.1/all")
+    const response = await fetch("https://restcountries.com/v3.1/all");
     const countries = await response.json();
     // console.log(countries)
 
@@ -12,46 +12,44 @@ async function restCountires() {
     bootstrapContainer.className = "container";
     document.body.appendChild(bootstrapContainer);
 
-    // sub-div for class row in container class
-    const subDiv = document.createElement("div");
-    subDiv.className = "row";
-    bootstrapContainer.appendChild(subDiv);
-
     // h1 tag with class text-enter in container.
     const title = document.createElement("h1");
     title.id = "title";
     title.className = "text-center";
     title.textContent = "All the Country details and weather reports";
-    subDiv.appendChild(title);
+    bootstrapContainer.appendChild(title);
 
-    // another div have class row col-lg-4 col-sm-12 in  class row in div tag
-    const classDiv = document.createElement("div");
-    classDiv.className = " col-sm-6.col-md-4.col-lg-4.col-xl-4";
-    subDiv.appendChild(classDiv);
-
+    // sub-div for class row in container class
+    const subDiv = document.createElement("div");
+    subDiv.className = "row";
+    bootstrapContainer.appendChild(subDiv);
 
     // Using for each method to get each countries data
     countries.forEach((country) => {
+    // another div have col-xl-4 col-lg-4 col-md-4 col-sm-6 as a className in row div tag
+    const classDiv = document.createElement("div");
+    classDiv.className = "col-xl-4 col-lg-4 col-md-4 col-sm-6";
+    subDiv.appendChild(classDiv);
+
+    
+    
       // here a create div tag with class name card
       const cardDiv = document.createElement("div");
-      cardDiv.className = "card";
+      cardDiv.className = "card h-100";
 
       // Another div tag creating for header with class name card-header
       const cardHeadDiv = document.createElement("div");
       cardHeadDiv.className = "card-header";
       cardHeadDiv.textContent = country.name.common;
 
-
       // div tag for card-body
       const cardBodyDiv = document.createElement("div");
       cardBodyDiv.className = "card-body";
 
-
       // creating image tag with class flag-image
       const flagImg = document.createElement("img");
-      flagImg.setAttribute("class", "flag-image");
+      flagImg.setAttribute("class", "card-img-top");
       flagImg.src = country.flags.png;
-
 
       // creating div tag with class card-text with innerHTML texts
       const cardText = document.createElement("div");
@@ -61,7 +59,6 @@ async function restCountires() {
       Latlng:  ${country.latlng} <br>
       Country Code:${country.cca3}<br>
       Population: ${country.population}`;
-
 
       //create button in div with class btn btn-primary and text content click for weather
       const btn = document.createElement("div");

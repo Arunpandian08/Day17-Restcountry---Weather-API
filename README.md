@@ -13,5 +13,12 @@ catch(error){
 }
 }
 ```
+
+```javascript
+// Using forEach() method to display each countries data 
+array.forEach(element => {
+  
+});
+``````
 ` similary, using the same way to get weather`. 
 you can get output in ➡🔗 [netlify.com](https://restcountries-and-weather-reports.netlify.app/)
